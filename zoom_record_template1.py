@@ -11,21 +11,6 @@ app = Flask(__name__)
 @app.route('/')
 def home():
 	return send_file('index.html')
-
-@app.route('/bchem')
-def bchem():
-	bchem_id='6136614837'
-	bchem_pswd='chemistry'
-	join(bchem_id,bchem_pswd)
-	return send_file('joined.html')
-
-@app.route('/sridhar')
-def sridhar():
-	sridhar_id='8730650317'
-	sridhar_pswd='123456'
-	join(sridhar_id,sridhar_pswd)
-	return send_file('joined.html')
-
 @app.route('/voice')
 def joinbyvoice():
 	id_done=False
